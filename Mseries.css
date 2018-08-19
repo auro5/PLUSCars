@@ -1,0 +1,168 @@
+.info
+{
+    margin-top: 116px;
+    z-index: 0;
+    
+}
+.Mhead
+{
+    text-align: center;
+    font-family: monospace;
+    font-size: 60px;
+    text-shadow: 15px;
+    color: #D22900;
+	
+}
+.Mdetails
+{
+    text-align: center;
+    font-size: 22px;
+}
+.info .Mdetails{
+margin-top:50px;
+border:1px solid white;
+box-shadow: 3px 3px 40px grey;
+margin-bottom:10px;
+width:1000px;
+margin-left:150px;
+font-family:Georgia;
+}
+.models
+{
+    background-color: white;
+   
+    height: 260px;
+    margin: 0px;
+}
+.modelhead
+{
+    text-align: center;
+    font-size: 36px;
+    font-family: monospace;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    
+}
+.modelhead p
+{
+    color: #532380;
+    margin: 0px;
+}
+hr
+{
+    margin: 0px;
+    width: 100%;
+     border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+}
+
+.row
+{
+    box-sizing:border-box;
+    display: block;
+}
+
+.row:before
+{
+    display: table;
+    content: " ";
+}
+
+.row:after
+{
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.col-md-6
+{
+    box-sizing:border-box;
+    width: 50%; 
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.car-img
+{
+    width: 100%;
+}
+
+.text-to-toggle
+{
+    background-color: white;
+    border-radius: 5px;
+    display: inline;
+    margin: 50px;
+    padding: 15px;
+}
+
+.car-details
+{
+    padding-right: 100px;
+    padding-top: 50px;
+    text-align: right;
+    font-family: Tahoma;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+
+.more-details
+{
+    color: black;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 200;
+    font-style: italic;
+    text-transform: lowercase;
+
+}
+
+.text-details
+{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.toggler
+{
+    color: blue;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.car-model
+{
+    border-bottom: 1px #CCC solid;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.text-to-toggle p
+{
+    color: #fff;
+}
+.engine
+{
+
+    color: #fff;
+
+}
+.heading
+{
+    font-family: monospace;
+    font-size: 20px;
+    color: black;
+}
+.colors
+{
+    float: left;
+    width: 200px;
+}
+.back{
+background-color:#000;
+	color: #ffffff;
+}
