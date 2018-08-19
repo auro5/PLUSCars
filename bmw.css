@@ -1,0 +1,217 @@
+#home { 
+
+height: 1000px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+	margin-top: -100px;
+}
+ 
+.container
+{
+    background-color: #fff!important;
+	
+	position: absolute;
+}
+
+
+.shead
+{
+	
+	margin: 0px;
+    padding: 5px;
+    font-family: monospace;
+	font-size: 48px;
+	text-align: center;
+  color: black;
+  text-shadow: 
+    1px 0px 1px #ccc, 0px 1px 1px #eee, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee,
+    3px 2px 1px #ccc, 2px 3px 1px #eee,
+    4px 3px 1px #ccc, 3px 4px 1px #eee,
+    5px 4px 1px #ccc, 4px 5px 1px #eee,
+    6px 5px 1px #ccc, 5px 6px 1px #eee,
+    7px 6px 1px #ccc;
+  }
+
+.sdetails
+{
+	font-size: 20px;
+    width: 75%;
+    margin-left: 10%;
+    text-align: center;
+}
+.bgimage
+{
+background: url(images/bmwhome.jpeg); min-height: 1000px;
+}
+hr
+{
+	width: 100%;
+     border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+}
+.bgimagedetails
+{
+	z-index: 3;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 20%;
+     z-index: 0;
+
+}
+.bgimagedetails p
+{
+
+    font-family: monospace;
+    margin: 3px;
+    font-size: 65px;
+ color:#E80E0E;
+ text-shadow: 0 1px 0 #ccc,
+ 0 2px 0 #c9c9c9,
+ 0 3px 0 #bbb,
+ 0 4px 0 #b9b9b9,
+ 0 5px 0 #aaa,
+ 0 6px 1px rgba(0,0,0,.1),
+ 0 0 5px rgba(0,0,0,.1),
+ 0 1px 3px rgba(0,0,0,.3),
+ 0 3px 5px rgba(0,0,0,.2),
+ 0 5px 10px rgba(0,0,0,.25),
+ 0 10px 10px rgba(0,0,0,.2),
+ 0 20px 20px rgba(0,0,0,.15);
+
+  
+}
+#series
+{
+    height: 1000px;
+}
+
+.bmwm
+{
+    margin-left: 12%;
+    height:349px;
+    overflow: hidden;
+	z-index: 0;
+    width: 1200px;
+    margin-right: 0px;
+    float: left;
+    width: 50%;
+    
+}
+#model
+{
+	width: 100%;
+}
+.text
+{ 
+    background-color: rgba(255,255,255,0.6);
+    padding: 25px;
+	position: absolute;
+	z-index: 2;
+    transition: background-color 0.3s ease;
+
+}
+.text p
+{
+    margin: 0px;
+    color: black;
+    font-size: 28px;
+
+
+}
+.bmwx
+{
+    /*margin-left: 12%;*/
+    /*height: 270px;*/
+    overflow: hidden;
+	z-index: 0;
+    margin-right: 0px;
+    float: left;
+    width: 26%;
+}
+.bmw3
+{
+   
+    /*height: 270px;*/
+    overflow: hidden;
+    margin-bottom: 10px;
+	z-index: 0;
+	margin-top:-2;
+    padding-left:12%;
+    float: left;
+    width: 26%;
+
+}
+.bmw7
+{
+	    margin-top: -338px;
+    margin-left: 152px;
+    height:328px;
+    overflow: hidden;
+    margin-bottom: 10px;
+	z-index: 0;
+    width: 1200px;
+    margin-right: 0px;
+    float: left;
+    width: 50%;   
+}
+
+.text7 p
+{
+    margin: 0px;
+    color: black;
+    font-size: 28px;
+
+}
+
+.text7
+{ 
+    background-color: rgba(255,255,255,0.6);
+    padding: 25px;
+	position: absolute;
+	z-index: 2;
+   
+    transition: background-color 0.3s ease;
+
+}
+
+.textx p
+{
+    margin: 0px;
+    color: black;
+    font-size: 28px;
+
+}
+
+.textx
+{ 
+    background-color: rgba(255,255,255,0.6);
+    padding: 25px;
+	position: absolute;
+	z-index: 2;
+    margin-left: 14%;
+    transition: background-color 0.3s ease;
+
+}
+p a
+{
+    text-decoration: none;
+    color: black;
+}
+.text:hover
+{
+        background-color: rgba(255,255,255,0.9);
+
+}
+.textx:hover
+{
+        background-color: rgba(255,255,255,0.9);
+
+}.text7:hover
+{
+        background-color: rgba(255,255,255,0.9);
+
+}
