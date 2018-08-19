@@ -1,0 +1,122 @@
+<HTML>
+	<HEAD>
+		<link rel="stylesheet" href="login.css"/>
+		<link rel="stylesheet" href="home.css"/>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+function validate()
+{
+    var x = document.form3.email.value
+	var message = document.getElementById('confirmMessage');
+	message.style.marginLeft="450px";
+    message.style.marginTop="-30px";
+	message.style.fontSize="20px";
+
+	var error = document.getElementById('errorMessage');
+	error.style.marginLeft="500px";
+    error.style.marginTop="-30px";
+	error.style.fontSize="20px";
+
+	if (x.indexOf("@")==-1 && x.indexOf(".")==-1)
+	{
+    
+    message.innerHTML = "Invalid Email Id!";
+    message.style.color = "red";
+    document.form3.email.focus()
+	}
+	
+if(document.form3.user.value=="")
+{
+	alert ("Please enter User Name")
+	return false
+}
+if(document.form3.password.value=="")
+{
+	alert ("Please enter Password")
+	return false
+}
+    var pass = document.form3.password.value;
+    var rpa = document.form3.retype.value;
+    if( pass.length<6)
+        {alert("Password should be of min 6 characters and of max 15 characters");
+    	document.form3.password.focus()
+    	}
+    else if( pass.length>15)
+        {alert("Password should be of min 6 characters and of max 15 characters");
+    	document.form3.password.focus()
+    	}
+    	else if(pass!=rpa) 
+			{
+			error.innerHTML = "Passwords Do Not Match!"
+    		error.style.color = "red";
+		    document.form3.password.focus()
+    		return false;
+			}
+		else if(document.form3.contact.value=="")
+		{
+			alert("Please give contact info");
+			return false;
+		}
+		else 
+		{
+            var len=document.form3.contact.value
+				if (len.length!=10)
+				{
+				alert("Enter valid number");
+				return false;
+				}
+	 			else
+ 					document.form3.submit();
+	 	}
+}
+		</script>
+</head>
+<body>
+
+    <div class="body"></div>
+    <div class="head" id="nav">
+  		<img id="logo" src="images/logo.png" alt="logo"  />
+  			<ul id="navbar">
+    			<li><a href="homepage.html">Home</a>
+				   
+				 </li>  
+     			<li><a href="#">Brands</a>
+				  <ul>
+				     <li><a href="#bmw.html">BMW</a></li>
+					 <li><a href="#jaguar.html">Jaguar</a></li>
+					 <li><a href="#porsche.html">Porsche</a></li>
+					 <li><a href="#lambo.html">Lamborghini</a></li>
+				  </ul>
+				</li>
+     			<li><a href="contactus.html">Contact Us</a>
+					
+				</li>
+     			<li><a href="aboutus.html">About Us</a>
+				  
+				 </li>
+				<li><a href="Repairs.php">Services</a>  
+				 </li>
+				 <li><a href="faq.php">FAQ</a>
+				 </li>
+  			</ul>
+  			
+	</div>
+	<div class="container">
+		<div class="header">
+			<div>PLUS<span>CARS</span></div>
+		</div>
+		<div class="login" id="form3">
+			<form action="new.php" method="post" class="signup-form" name="form3" >
+					<input type="text" placeholder="username" name="user"><br>
+					<input id="emailmsg" style="margin-top:10px;" type="email" placeholder="Email Address" name="email"><p id="confirmMessage" class="confirmMessage"></p>
+					<input type="password" placeholder="Password" name="password"><p id="errorMessage" class="errorMessage"></p>
+					<input type="password" placeholder="Re-type Password" name="retype"><br>
+					<input type="text" placeholder="What is your mother's maiden name?" name="quest"><br>
+					<input type="text" placeholder="Contact" name="contact"><br>
+					<input type="button" value="Join now" onclick="return validate();">
+			</form>
+		</div>
+    </div>
+   </body>
+  </html>

@@ -1,0 +1,129 @@
+<HTML>
+	<HEAD>
+		<link rel="stylesheet" href="login.css"/>
+		<link rel="stylesheet" href="home.css"/>
+
+		<script>
+			function showForgotPasswordForm()
+			{
+				document.getElementById('form1').style.display = "none";
+				document.getElementById('form2').style.display = "block";
+			}
+        
+function emailchk()
+{
+var x=document.form2.email.value;
+if (x.indexOf("@")==-1 && x.indexOf(".")==-1)
+{
+	alert("It seems you entered an invalid email address.");
+	document.form2.email.focus();
+}
+if(document.form4.newpass.value=="")
+	{
+		alert("Enter new password");
+		return false;
+	}
+    var plen=document.form4.newpass.value;
+    var rpa = document.form4.repass.value;
+    if( plen.length<6)
+        alert("Password should be of min 6 characters and of max 15 characters");
+    else if( plen.length>15)
+        alert("Password should be of min 6 characters and of max 15 characters");
+    	else if(pass!=rpa) 
+			{
+			error.innerHTML = "Passwords Do Not Match!"
+    		error.style.color = "red";
+		    document.form3.password.focus()
+    		return false;
+			}
+			else 
+			{
+			document.form2.submit;
+			}
+}
+
+function validate()
+{
+	if(document.form1.user.value=="")
+	{   
+		alert ("Please enter User Name")
+		return false;
+	}
+	if(document.form1.password.value=="")
+	{
+		alert ("Please enter Password")
+		return false;
+	}
+    var plen=document.form1.password.value;
+    if( plen.length<6)
+        alert("Password should be of min 6 characters and of max 15 characters");
+    else if( plen.length>15)
+        alert("Password should be of min 6 characters and of max 15 characters");
+}	
+
+		</script>
+	</HEAD>
+<body>
+
+    <div class="body"></div>
+    <div class="head" id="nav">
+  		<img id="logo" src="images/logo.png" alt="logo"  />
+  			<ul id="navbar">
+    			<li><a href="homepage.html">Home</a>
+				   
+				 </li>  
+     			<li><a href="#">Brands</a>
+				  <ul>
+				     <li><a href="#bmw.html">BMW</a></li>
+					 <li><a href="#jaguar.html">Jaguar</a></li>
+					 <li><a href="#porsche.html">Porsche</a></li>
+					 <li><a href="#lambo.html">Lamborghini</a></li>
+				  </ul>
+				</li>
+     			<li><a href="contactus.html">Contact Us</a>
+					
+				</li>
+     			<li><a href="aboutus.html">About Us</a>
+				  
+				 </li>
+				<li><a href="Repairs.php">Services</a>  
+				 </li>
+				 <li><a href="faq.php">FAQ</a>
+				 </li>
+  			</ul>
+  			
+	</div>
+	<div class="container">
+		<div class="header">
+			<div>PLUS<span>CARS</span></div>
+		</div>
+		<div class="login" id="form1">
+			<form action="user.php" method="post" class="signup-form" name="form1" >
+					<input type="text" placeholder="username" name="user" >
+					<br>
+					<input type="password" placeholder="password" name="password"><br>
+					<input name="submit" type="submit" value="Login" onclick="return validate()" >
+					<div class="signup">
+						<a class="fp" href="#" onclick="showForgotPasswordForm()">Forgot Password?</a> 
+						<a class="su" href="Signup.html">Sign Up</a>
+					</div>
+			</form>
+		</div>
+		<div class="login" id="form2" style="display:none;">
+			<form action="checkUser.php" method="post" class="signup-form" name="form2">
+					<p class="cp">Change your password</p>
+					<p class="ac"> Let's find your account</p>
+				<input type="email" placeholder="Email Address" name="email" onblur="emailchk()"><br>
+				<input style="margin-top: 10px" type="text" placeholder="What is your mother's maiden name?" name="quest"><br>
+				<input type="password" placeholder="New Password" name="newpass">
+					<br>
+					<input type="password" placeholder="Retype Password" name="repass">
+					<br>
+				<input type="submit" value="Send" onclick="emailchk()">
+				
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
