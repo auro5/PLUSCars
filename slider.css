@@ -1,0 +1,64 @@
+body
+{
+	margin: 0px !important;
+}
+
+
+.con
+{ 
+    /*top: -10px;
+    left:-10px;*/
+    right:0px;
+	max-width: 100%;
+	height: 645px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	z-index: 0;
+
+}
+
+
+
+.image
+{
+	
+	position: absolute;
+	max-width: 120%;
+	max-height:100%;
+	min-height: 100%;
+	max-height:100%;
+	width: 120%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	-webkit-animation-name: r;
+	-webkit-animation-duration: 25s;
+	-webkit-animation-iteration-count: infinite ;
+	-moz-animation-name: r;
+	-moz-animation-duration: 25s;
+	-moz-animation-iteration-count: infinite ;
+	opacity: 0;
+	z-index: 0;
+}
+ @-webkit-keyframes r 
+ {
+   10% {opacity: 1;}
+   35% {opacity: 0;} 
+
+}
+ @-moz-keyframes r 
+ {
+ 	10% {opacity: 1};
+    30% {opacity: 0}; 
+}
+
+/*.con span:nth-child(0){background-image:url('images/a.jpg'); -webkit-animation-delay: 0s; -webkit-animation-timing-function: ease-in;  -moz-animation-delay: 0s; -moz-animation-timing-function: ease-in;}
+*/.con span:nth-child(1){background-image:url('images/b.jpg'); -webkit-animation-delay: 0s; -webkit-animation-timing-function: ease-in; -moz-animation-delay: 5s; -moz-animation-timing-function: ease-in;}
+.con span:nth-child(2){background-image:url('images/c.jpg'); -webkit-animation-delay: 5s; -webkit-animation-timing-function: ease-in; -moz-animation-delay: 10s; -moz-animation-timing-function: ease-in;}
+.con span:nth-child(3){background-image:url('images/d.jpg'); -webkit-animation-delay: 10s; -webkit-animation-timing-function: ease-in; -moz-animation-delay: 15s; -moz-animation-timing-function: ease-in;}
+.con span:nth-child(4){background-image:url('images/e.jpg'); -webkit-animation-delay: 15s; -webkit-animation-timing-function: ease-in; -moz-animation-delay: 20s; -moz-animation-timing-function: ease-in;}
+.con span:nth-child(5){background-image:url('images/f.jpg'); -webkit-animation-delay: 20s; -webkit-animation-timing-function: ease-in; -moz-animation-delay: 25s; -moz-animation-timing-function: ease-in;}
+
+
